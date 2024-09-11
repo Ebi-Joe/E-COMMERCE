@@ -101,21 +101,21 @@ function Login() {
 
   return (
     <>
-        <div className="grid grid-cols md:flex justify-center">
+        <div className="grid grid-cols md:flex h-[92vh] justify-center">
             <div className="form h-[90vh] md:h-[75vh] pt-10">
-                <form onSubmit={loginHandler} action="" className='w-[60vw] md:max-w-[32vw] h-[75vh] mx-auto rounded bg-[grey]'>
+                <form onSubmit={loginHandler} action="" className='w-[60vw] h-[70vh] md:max-w-[32vw] md:h-[75vh] mx-auto rounded bg-[grey]'>
                     <h1 className='py-8 text-4xl text-center font-bold'>LOGIN</h1>
                     <div className="pb-3 px-4">
                         <label htmlFor="" className='font-bold text-xl px-3'>E-Mail:</label>
-                        <input onChange={(e) => setEmail(e.target.value)} type='email' className='p-2 md:w-[28vw] m-2 rounded block' placeholder='Input E-mail' required/>
+                        <input onChange={(e) => setEmail(e.target.value)} type='email' className='p-2 w-full m-2 rounded block' placeholder='Input E-mail' required/>
                     </div>
                     <div className="py-3 px-4">
                         <label htmlFor="" className='font-bold text-xl px-3'>Password:</label>
-                        <input onChangeCapture={(e) => setPassword(e.target)} onChange={validatePassword} type="password" className='p-2 md:w-[28vw] m-2 rounded block' name="" id="" placeholder='Input Password' required/>
+                        <input onChangeCapture={(e) => setPassword(e.target)} onChange={validatePassword} type="password" className='p-2 w-full m-2 rounded block' name="" id="" placeholder='Input Password' required/>
                             {message && <p> {message} </p>}
                     </div>
-                    <div className='max-w-[28.5vw] mx-auto '>
-                        <button className='bg-[#1B1811] rounded text-lg text-center text-white p-2 py-3 w-[28vw] hover:bg-[white] hover:text-[black]' type="submit" disabled={btnDisabled}>Log In</button>
+                    <div className='ml-6 mr-2'>
+                        <button className='bg-[#1B1811] rounded text-lg text-center text-white p-2 py-3 w-full hover:bg-[white] hover:text-[black]' type="submit" disabled={btnDisabled}>Log In</button>
                     </div>
                 </form>
             </div>

@@ -65,31 +65,31 @@ function SignUp() {
     <>
         <div className="signup grid grid-cols md:flex justify-center">
             <div className="form h-[130vh] md:h-[126vh] pt-10">
-                <form onSubmit={registerHandler} action="" className='w-[80vw] h-[100vh] md:w-[32vw] h-[113vh] mx-auto rounded bg-[silver]'>
+                <form onSubmit={registerHandler} action="" className='w-[screen] h-[100vh] md:w-[32vw] h-[113vh] mx-auto rounded bg-[silver]'>
                     <h1 className='py-6 text-center text-4xl font-bold'>SIGN UP</h1>
                     <div className="">
                         <label htmlFor="" className='mx-7 font-semibold text-lg'>First Name:</label>
-                        <input onChange={(e) => setFirstName(e.target.value)} type="text" className='p-2 mx-6 md:w-[28vw] m-2 rounded block' placeholder='Input Username'/>
+                        <input onChange={(e) => setFirstName(e.target.value)} type="text" className='p-2 mx-6 w-full m-2 rounded block' placeholder='Input Username'/>
                     </div>
                     <div className="">
                         <label htmlFor="" className='mx-7 font-semibold text-lg'>Last Name:</label>
-                        <input onChange={(e) => setLastName(e.target.value)} type="text" className='p-2 mx-6 md:w-[28vw] m-2 rounded block' name="" id="" placeholder='Input Last Name'/>
+                        <input onChange={(e) => setLastName(e.target.value)} type="text" className='p-2 mx-6 w-full m-2 rounded block' name="" id="" placeholder='Input Last Name'/>
                     </div>
                     <div className="">
                         <label htmlFor="" className='mx-7 font-semibold text-lg'>Phone Number:</label>
-                        <input onChange={(e) => setPhone(e.target.value)} type="number" className='p-2 mx-6 md:w-[28vw] m-2 rounded block' name="" id="" placeholder='Input Phone Number'/>
+                        <input onChange={(e) => setPhone(e.target.value)} type="number" className='p-2 mx-6 w-full m-2 rounded block' name="" id="" placeholder='Input Phone Number'/>
                     </div>
                     <div className="">
                         <label htmlFor="" className='mx-7 font-semibold text-lg'>E-Mail:</label>
-                        <input onChange={(e) => setEmail(e.target.value)} type="text" className='p-2 mx-6 md:w-[28vw] m-2 rounded block' name="" id="" placeholder='Input E-Mail'/>
+                        <input onChange={(e) => setEmail(e.target.value)} type="text" className='p-2 mx-6 w-full m-2 rounded block' name="" id="" placeholder='Input E-Mail'/>
                     </div>
                     <div className="">
                         <label htmlFor="" className='mx-7 font-semibold text-lg'>Password:</label>
-                        <input onChange={(e) => setPassword(e.target.value)} type="password" className='p-2 mx-6 md:w-[28vw] m-2 rounded block' name="" id="" placeholder='Input Password'/>
+                        <input onChange={(e) => setPassword(e.target.value)} type="password" className='p-2 mx-6 w-full m-2 rounded block' name="" id="" placeholder='Input Password'/>
                     </div>
                     <div className="">
                         <label htmlFor="" className='mx-7 font-semibold text-lg'>Confirm Password:</label>
-                        <input onChange={(e) => setConfirmPassword(e.target.value)} type="password" className='p-2 mx-6 md:w-[28vw] m-2 rounded block' name="" id="" placeholder='Confirm Password'/>
+                        <input onChange={(e) => setConfirmPassword(e.target.value)} type="password" className='p-2 mx-6 w-full m-2 rounded block' name="" id="" placeholder='Confirm Password'/>
                     </div>
                     <h1 className='text-center pb-6'>Already a member? <span className='font-bold'><a href="" className='hover:underline'>Log In</a></span></h1>
                     <div className="w-[23vw] bg-[black] text-center text-lg text-white p-2 md:w-[25vw] lg:max-w-[10vw] rounded mx-auto my-3 hover:bg-[white] hover:text-[black]">
