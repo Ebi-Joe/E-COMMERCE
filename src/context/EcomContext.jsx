@@ -35,13 +35,13 @@ export const EcomProvider = ({ children }) => {
     const featuredProduct = product.filter((product) => product.featured === true)
     const topSellingProduct = product.filter((product) => product.topSelling === true)
 
-    const getUser = async () => {
-        try {
-            const res = await fetch("http://localhost:3000/api/user")
-        } catch (error) {
-            console.log( {message: error.message})
-        }
-    }
+    // const getUser = async () => {
+    //     try {
+    //         const res = await fetch("http://localhost:3000/api/user")
+    //     } catch (error) {
+    //         console.log( {message: error.message})
+    //     }
+    // }
 
     // adding items to cart
     const addToCart = async (productId, quantity, product) => {
