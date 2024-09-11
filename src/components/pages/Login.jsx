@@ -103,7 +103,7 @@ function Login() {
     <>
         <div className="grid grid-cols md:flex h-[92vh] justify-center">
             <div className="form h-[90vh] md:h-[75vh] pt-10">
-                <form onSubmit={loginHandler} action="" className='w-[60vw] h-[70vh] md:max-w-[32vw] md:h-[75vh] mx-auto rounded bg-[grey]'>
+                <form onSubmit={loginHandler} action="" className='w-[60vw] h-[64vh] md:max-w-[32vw] md:h-[75vh] mx-auto rounded bg-[grey]'>
                     <h1 className='py-8 text-4xl text-center font-bold'>LOGIN</h1>
                     <div className="pb-3 px-4">
                         <label htmlFor="" className='font-bold text-xl px-3'>E-Mail:</label>
