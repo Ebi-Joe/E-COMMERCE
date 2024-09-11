@@ -63,13 +63,13 @@ function SignUp() {
 
   return (
     <>
-        <div className="signup grid grid-cols md:flex justify-center">
+        <div className="signup grid grid-cols md:flex justify-center bg-[whitesmoke]">
             <div className="form h-[130vh] md:h-[126vh] pt-10">
-                <form onSubmit={registerHandler} action="" className='w-[screen] h-[100vh] md:w-[32vw] h-[113vh] mx-auto rounded bg-[silver]'>
+                <form onSubmit={registerHandler} action="" className='h-[100vh] md:w-[32vw] md:border-2 h-[112vh] rounded'>
                     <h1 className='py-6 text-center text-4xl font-bold'>SIGN UP</h1>
                     <div className="">
                         <label htmlFor="" className='mx-7 font-semibold text-lg'>First Name:</label>
-                        <input onChange={(e) => setFirstName(e.target.value)} type="text" className='p-2 mx-6 w-full m-2 rounded block' placeholder='Input Username'/>
+                        <input onChange={(e) => setFirstName(e.target.value)} type="text" className='p-2 ml-6 mr- w-full m-2 rounded block' placeholder='Input Username'/>
                     </div>
                     <div className="">
                         <label htmlFor="" className='mx-7 font-semibold text-lg'>Last Name:</label>
