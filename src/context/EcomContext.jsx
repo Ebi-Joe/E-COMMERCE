@@ -300,7 +300,6 @@ export const EcomProvider = ({ children }) => {
             featuredProduct,
             topSellingProduct,
             isAuthenticated,
-            getUser,
             showHide,
             addToCart,
             calculateVat,
