@@ -3,7 +3,7 @@ import React from 'react'
 function Loaders() {
   return (
     <>
-        <div className="text-center m-auto absolute text-2xl top-[30%] left-[42%]">
+        <div className="text-[12px] md:text-center m-auto absolute text-2xl top-[30%] left-[42%]">
         <svg className="pl" viewBox="0 0 160 160" width="160px" height="160px" xmlns="http://www.w3.org/2000/svg">
 			<defs>
 				<linearGradient id="grad" x1="0" y1="0" x2="0" y2="1">
