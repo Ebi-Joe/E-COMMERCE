@@ -20,6 +20,7 @@ import { AuthProvider } from './context/AuthContext';
 import Reviews from './components/Reviews';
 import ThankYou from './components/pages/ThankYou';
 import AdminHeader from './components/pages/admin/AdminHeader';
+import AdminDashboard from './components/pages/admin/AdminDashboard';
 
 function App() {
   const { getItem } = useLocalStorage("auth-token");
@@ -66,7 +67,13 @@ function App() {
                 <AdminHeader/>
               </>}
               />
+
+              <Route path='/adminD' element={<>
+                <AdminDashboard/>
+
+              </>}
               
+              />              
               
               <Route path='/about' element={<>
                 <Header/>

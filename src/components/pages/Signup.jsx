@@ -63,7 +63,7 @@ function SignUp() {
 
   return (
     <>
-        <div className="signup grid grid-cols md:flex justify-center bg-[whitesmoke]">
+        <div className="signup grid grid-cols md:flex justify-center align-center bg-[whitesmoke]">
             <div className="form h-[130vh] md:h-[126vh] pt-10">
                 <form onSubmit={registerHandler} action="" className='h-[100vh] md:w-[32vw] md:border-2 h-[112vh] rounded'>
                     <h1 className='py-6 text-center text-4xl font-bold'>SIGN UP</h1>
@@ -92,7 +92,7 @@ function SignUp() {
                         <input onChange={(e) => setConfirmPassword(e.target.value)} type="password" className='p-2 mx-6 w-full m-2 rounded block' name="" id="" placeholder='Confirm Password'/>
                     </div>
                     <h1 className='text-center pb-6'>Already a member? <span className='font-bold'><a href="" className='hover:underline'>Log In</a></span></h1>
-                    <div className="w-[23vw] bg-[black] text-center text-lg text-white p-2 md:w-[25vw] lg:max-w-[10vw] rounded mx-auto my-3 hover:bg-[white] hover:text-[black]">
+                    <div className="w-[28vw] bg-[black] text-center text-lg text-white p-2 md:w-[25vw] lg:max-w-[10vw] rounded mx-auto my-3 hover:bg-[white] hover:text-[black]">
                         <button type="submit">SIGN UP</button>
                     </div>
                 </form>
