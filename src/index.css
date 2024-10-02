@@ -555,33 +555,3 @@
     text-transform: uppercase;
     opacity: 0;
   }
-
-*{
-    list-style: none;
-    text-decoration: none;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
-}
-
-body{
-    background: #f5f6fa;
-}
-
-.wrapper .sidebar{
-    background: teal;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    padding: 20px 0;
-    transition: all 0.5s ease;
-}
-
-.wrapper .sidebar .item ul li:hover{
-  color: teal;
-  background: white;
-  border-right: 2px solid teal;
-  transition-duration: 0.7s;
-}

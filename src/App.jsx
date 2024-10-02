@@ -19,8 +19,9 @@ import useLocalStorage from './hooks/useLocalStorage';
 import { AuthProvider } from './context/AuthContext';
 import Reviews from './components/Reviews';
 import ThankYou from './components/pages/ThankYou';
-import AdminHeader from './components/pages/admin/AdminHeader';
+import AdminSidebar from './components/pages/admin/AdminSidebar';
 import AdminDashboard from './components/pages/admin/AdminDashboard';
+import AdminUser from './components/pages/admin/AdminUser';
 
 function App() {
   const { getItem } = useLocalStorage("auth-token");
@@ -62,18 +63,7 @@ function App() {
                 <Reviews/>
                 <Footer/>
               </>}
-              />
-              <Route path='/admin' element={<>
-                <AdminHeader/>
-              </>}
-              />
-
-              <Route path='/adminD' element={<>
-                <AdminDashboard/>
-
-              </>}
-              
-              />              
+              />          
               
               <Route path='/about' element={<>
                 <Header/>
@@ -117,12 +107,25 @@ function App() {
                 <Footer/>
               </>} 
               />
+
               <Route path="/thankyou" element={<>
                 <Header/>
                 <ThankYou/>
                 <Footer/>
               </>}
               />
+
+              <Route path='/admin' element={ <>
+                <AdminSidebar/>
+              </>}/>
+
+              <Route path='/dash' element={<>
+                <AdminDashboard/>
+              </>}/>
+
+              <Route path='/user' element={<>
+                <AdminUser/>
+              </>}/>
             </Routes>
           </Router>
         </EcomProvider>  
