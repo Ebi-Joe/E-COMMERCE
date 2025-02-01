@@ -144,7 +144,7 @@ export const EcomProvider = ({ children }) => {
     }
 
     //calcuate vat
-    const calculateVat = ( vat=0.075 ) => {
+    const calculateVat = ( vat = 0.075 ) => {
         const subtotal = calculateSubtotal()
         return subtotal * vat;
     }

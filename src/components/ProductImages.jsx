@@ -10,7 +10,7 @@ function ProductImages( { images, setSelectedImages } ) {
                     <img
                         src= {prodImg.img}
                         onClick={() => setSelectedImages(prodImg.img)}
-                        className="w-full object-cover rounded h-full cursor-pointer"
+                        className="w-full object-cover rounded h-fit cursor-pointer"
                         alt={`Product ${index}`}
                     />
                 </div>

@@ -56,10 +56,6 @@ function Header() {
             <i className="fa-solid fa-bars"></i>
         </button>
         {/* Second nav Mobile */}
-        {/* <div className={`fixed top-0 left-0 w-full h-screen bg-black bg-opacity-50 z-[20] transition-opacity duration-200
-            ${open }`}>
-
-         </div> */}
         <div className={`fixed lg:hidden top-0 left-0 w-[300px] h-screen overflow-auto z-30 bg-[#A5B2C5] transition-transform duration-200 
             ${ open ? "translate-x-0" : "-translate-x-full"}`}>
             {/* XMark for closing */}
